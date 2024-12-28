@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="join">
+    <label for="inputUser">Пользователь</label>
+    <input type="text" id="inputUser" />
+    <label for="inputChat">Чат</label>
+    <input type="text" id="inputChat" />
+
+    <button id="joinButton">Войти</button>
+</div>
+
+<div id="messages">
+    <label for="inputMessage">Сообщение</label>
+    <input type="text" id="inputMessage" />
+
+    <button id="sendButton">Отправить</button>
+</div>
+
+<ul id="messageList"></ul>
+
+<script src="js/signalr/dist/browser/signalr.js"></script>
+<script src="js/chat.js"></script>
